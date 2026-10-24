@@ -7,28 +7,6 @@
     <title>My Home Page</title>
     
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <style type="text/tailwindcss">
-        @layer base {
-            body {
-                @apply font-sans p-2;
-            }
-            h1 {
-                @apply text-[1.5em] font-bold my-[0.60em];
-            }
-            h2 {
-                @apply text-[1.2em] font-bold my-[0.73em];
-            }
-            h3 {
-                @apply text-[1.17em] font-bold my-[1em];
-            }
-            p {
-                @apply my-4;
-            }
-            a {
-                @apply text-blue-700 underline;
-            }
-        }
-    </style>
 
     <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicons/apple-touch-icon.png">    
     <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicons/favicon-32x32.png">    
@@ -36,13 +14,34 @@
     <link rel="manifest" href="assets/img/favicons/site.webmanifest">
 </head>
 
-<body>
-    <h1>Welcome to My Home Page</h1>
-    <p>This is a simple HTML page that serves as the home page for my website. Here, you can find information about me, my interests, and links to other pages on my site.</p>
-    <p><a href="exercises/page-1.html">A Tale of Two Cities</a></p>
-    <p><a href="exercises/page-2.html">Purple Rain</a></p>
-    <p><a href="exercises/page-3.html">Web Page with Sections</a></p>
-    <p><a href="exercises/page-4.html">Vincent van Gogh</a></p>
-    <p><a href="exercises/page-5.html">Irish Tourism</a></p>
+<body class="bg-[#FFDBB0] text-[#564172] font-sans m-0 p-0 min-h-screen flex flex-col justify-between">
+
+    <header class="bg-[#428C8B] text-[#FFDBB0] py-16 px-6 text-center shadow-md">
+        <h1 class="text-4xl md:text-5xl font-bold tracking-tight mb-3">Welcome to My Home Page</h1>
+        <p class="text-xl font-medium text-[#FFDBB0]/90">Web Development Portfolio</p>
+    </header>
+
+    <main class="bg-[#995757] text-[#FFDBB0] py-12 px-6 flex-grow flex items-center justify-center">
+        <div class="max-w-xl w-full mx-auto text-center">
+            <p class="text-lg mb-8 leading-relaxed">
+                This is a simple HTML page that serves as the home page for my website. Here, you can find information about me, my interests, and links to other pages on my site.
+            </p>
+
+            <h2 class="text-2xl font-bold mb-6 uppercase tracking-wider text-white">Sample Web Pages</h2>
+
+            <nav class="space-y-4 text-lg font-medium">
+                <p><a href="exercises/page-1.html" class="hover:underline hover:text-white transition-colors block">A Tale of Two Cities</a></p>
+                <p><a href="exercises/page-2.html" class="hover:underline hover:text-white transition-colors block">Purple Rain</a></p>
+                <p><a href="exercises/page-3.html" class="hover:underline hover:text-white transition-colors block">Web Page with Sections</a></p>
+                <p><a href="exercises/page-4.html" class="hover:underline hover:text-white transition-colors block">Vincent van Gogh</a></p>
+                <p><a href="exercises/page-5.html" class="hover:underline hover:text-white transition-colors block">Irish Tourism</a></p>
+            </nav>
+        </div>
+    </main>
+
+    <footer class="bg-[#564172] text-[#FFDBB0] text-center py-4 text-sm">
+        <p>&copy; 2026 Matheus Carvalho - Student ID: 82769</p>
+    </footer>
+
 </body>
 </html>

@@ -10,24 +10,44 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <style type="text/tailwindcss">
 
+        body {
+            @apply bg-[#FFDBB0] text-[#564172] font-sans m-0 p-0 min-h-screen flex flex-col justify-between;
+        }
+
         header {
-            @apply text-6xl px-[40%] pb-[42px] md:py-[3%] md:px-[20%];
+            @apply bg-[#428C8B] text-[#FFDBB0] py-16 px-6 text-center shadow-md;
+        }
+
+        header h1 {
+            @apply text-4xl md:text-5xl font-bold tracking-tight mb-3 text-[#FFDBB0];
+        }
+
+        main {
+            @apply flex-grow py-12 px-6 flex justify-center;
         }
 
         section {   
-            @apply pt-8 px-[9%] pb-[42px] md:py-[3%] md:px-[20%];
+            @apply max-w-2xl w-full;
         }
 
         section h2 {   
-            @apply mt-8;
+            @apply mt-8 text-[#995757] font-bold text-2xl mb-4;
         }
 
         section h3 {   
-            @apply mt-6;
+            @apply mt-6 text-[#995757] font-bold text-xl mb-3;
         }
 
         section p {   
-            @apply mb-4;
+            @apply mb-4 leading-relaxed text-[#564172];
+        }
+
+        footer {
+            @apply py-6 px-6 text-center;
+        }
+
+        a {
+            @apply text-[#428C8B] underline font-medium hover:text-[#995757] transition-colors;
         }
 
     </style>   
@@ -52,8 +72,11 @@
             <h3>Smaller Heading</h3>
             <p>A wonderful fact to reflect upon, that every human creature is constituted to be that profound secret and mystery to every other. A solemn consideration, when I enter a great city by night, that every one of those darkly clustered houses encloses its own secret; that every room in every one of them encloses its own secret; that every beating heart in the hundreds of thousands of breasts there, is, in some of its imaginings, a secret to the heart nearest it!</p>
             <p>by <i>Charles Dickens</i>, published by <b>Chapman and Hall</b> in 1859.</p>
+            
+            <p class="mt-8"><a href="../index.html">Back to Home page</a></p>
         </section>
     </main>
-    <p><a href="../index.html">Back to Home page</a></p>
+    <footer>
+    </footer>
 </body>
 </html>

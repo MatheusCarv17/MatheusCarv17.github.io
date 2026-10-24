@@ -10,12 +10,16 @@
    
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <style type="text/tailwindcss">
+        body {
+            @apply bg-[#564172] text-white font-sans;
+        }
+
         header {
             @apply pt-8 px-[9%] pb-[42px] md:py-[3%] md:px-[20%];
         }
 
         header h1 {
-            @apply text-5xl md:text-6xl text-center font-bold mb-4;
+            @apply text-5xl md:text-6xl text-center font-bold mb-4 text-[#FFDBB0];
         }
 
         section {   
@@ -23,15 +27,19 @@
         }
 
         section h2 {   
-            @apply mt-8;
+            @apply mt-8 text-[#FFDBB0] text-xl font-bold;
         }
 
         section h3 {   
-            @apply mt-6;
+            @apply mt-6 text-[#FFDBB0] text-lg font-bold;
         }
 
         section p {   
-            @apply mb-4;
+            @apply mb-4 text-white/95;
+        }
+
+        a {
+            @apply text-[#428C8B] underline font-medium hover:text-[#FFDBB0] transition-colors;
         }
     </style>
 </head>
